@@ -5,9 +5,11 @@ int markerCount = 0;
 
 for (int i = 0; i <= transmission.Length - 1; i++)
 {
-    Console.WriteLine($"Mark: {transmission[i]} at index {i}");
-
-    markerCount++;
+    if (transmission[i] == '?')
+    {
+        Console.WriteLine($"{transmission[i]} at index {i}");
+        markerCount++;
+    }
 }
 
 Console.WriteLine($"Marker count: {markerCount}");
