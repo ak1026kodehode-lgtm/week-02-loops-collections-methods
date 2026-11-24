@@ -6,9 +6,22 @@ while (true)
     // TODO: Avslutt med break når command er EXIT eller null.
     // TODO: Ellers skriv Received: <command>.
 
-    if (command == "EXIT")
+    switch (command)
     {
-        break;
+        case "EXIT":
+        {
+            return;
+        }
+        case "ay":
+        {
+            Console.WriteLine("Ayyy");
+            break;    
+        }
+        default:
+        {
+            Console.WriteLine($"Received: {command}");
+            break;
+        }
     }
 }
 
