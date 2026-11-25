@@ -4,6 +4,8 @@ Console.WriteLine(FormatSignal("cargo-deck"));
 
 static string FormatSignal(string source)
 {
+    string text = $"[SIGNAL FROM: {source.ToUpper()}]";
     // TODO: Returner formatert string.
-    return "";
+    
+    return text;
 }
