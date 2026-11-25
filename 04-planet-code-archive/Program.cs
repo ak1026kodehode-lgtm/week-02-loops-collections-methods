@@ -1,4 +1,4 @@
-string[] planetCodes = { "ORION-4", "KAPPA-9", "LYRA-2", "NOVA-7", "VEGA-3" };
+string[] planetCodes = { "ORION-4", "LYRA-2", "NOVA-7", "VEGA-3" };
 bool found = false;
 
 // TODO: Skriv Length, første og siste element.
@@ -10,9 +10,10 @@ Console.WriteLine($"Last Element in planetCodes: {planetCodes[4]}");
 
 for (int i = 0; i <= planetCodes.Length - 1; i++)
 {
-    if (planetCodes == 'KAPPA-9')
+    if (planetCodes.Contains("KAPPA-9"))
     {
         found = true;
     }
 }
+
 Console.WriteLine($"Found KAPPA-9: {found}");

@@ -11,5 +11,9 @@ int jobNumber = 1;
 
 foreach (string repair in repairs)
 {
+    if (repairs == 'CANCELLED:')
+        continue;
+
+    jobNumber++;
     // TODO: Hopp over kansellerte jobber og nummerer resten.
 }
